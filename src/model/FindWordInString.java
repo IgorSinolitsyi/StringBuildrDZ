@@ -6,7 +6,7 @@ public class FindWordInString {
         int count = 0;
         int indexWordStart = stringBuilder.indexOf(findWord, 0);
         while (indexWordStart > -1) {
-            count = ++count;
+            ++count;
             indexWordStart = stringBuilder.indexOf(findWord, indexWordStart + findWord.length());
         }
         return count;
